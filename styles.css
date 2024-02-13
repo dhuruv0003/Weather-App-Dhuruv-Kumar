@@ -1,0 +1,254 @@
+*,
+*::before,
+*::after {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    overflow   : none;
+}
+
+:root {
+    --colorDark1 : #112D4E;
+    --colorDark2 : #ffffff;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
+
+}
+
+.wrapper {
+    width     : 100vw;
+    height    : 100vh;
+    color     : var(--colorDark2);
+    background: linear-gradient(90deg, rgb(1, 68, 74) 0%, rgba(0, 79, 97, 0.811) 100%);
+    padding   : 3rem;
+
+}
+
+.blob {
+    position: absolute;
+    top     : -7%;
+    left    : 24%;
+}
+
+.container {
+    height          : 99%;
+    width           : 50vw;
+    background-color: rgba(11, 131, 195, 0.199);
+    border-radius   : 3rem;
+    margin          : 0 auto;
+    box-shadow      : 5px 5px 50px 5px rgb(1, 16, 41);
+    position        : relative;
+}
+
+h1 {
+    text-align    : center;
+    text-transform: uppercase;
+    color         : rgba(216, 228, 228, 0.968);
+    padding-top   : 26px;
+    text-shadow   : 3px 3px 10px #112D4E;
+}
+
+.tab-container {
+    max-width      : 550px;
+    display        : flex;
+    justify-content: space-between;
+    margin         : 0 auto;
+    margin-top     : 3rem;
+}
+
+.tab {
+    cursor        : pointer;
+    font-size     : 0.875rem;
+    letter-spacing: 1.75px;
+    padding       : 5px 8px;
+}
+
+.tab.current-tab {
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius   : 4px;
+}
+
+.weather-container {
+    /* display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center; */
+    margin-block: 4rem;
+}
+
+.btn {
+    all             : unset;
+    /* or we can do */
+    /* border       : none;
+    appearance      : none; */
+    font-size       : 0.85rem;
+    text-transform  : uppercase;
+    border-radius   : 5px;
+    background-color: rgba(1, 59, 90, 0.674);
+    cursor          : pointer;
+    padding         : 10px 30px;
+    color           : white;
+    margin-bottom   : 10px;
+}
+
+.sub-container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+
+.grant-location-container {
+    display: none;
+}
+
+.grant-location-container.active {
+    display: flex;
+}
+
+.grant-location-container img {
+    margin-bottom: 2rem;
+}
+
+.grant-location-container p:first-of-type {
+    font-size  : 1.75rem;
+    font-weight: 600;
+
+}
+
+.grant-location-container p:last-of-type {
+    font-size     : 0.85rem;
+    font-weight   : 500;
+    margin-top    : 0.75rem;
+    margin-bottom : 1.75rem;
+    letter-spacing: 0.75px;
+}
+
+.loading-container {
+    display: none;
+}
+
+.loading-container.active {
+    display: flex;
+}
+
+.loading-container p {
+    text-transform: uppercase;
+}
+
+.user-info-container {
+    display: none;
+}
+
+.user-info-container.active {
+    display: flex;
+}
+
+.name {
+    display      : flex;
+    align-items  : center;
+    gap          : 0 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.user-info-container p {
+    text-transform: capitalize;
+    font-size     : 1.5rem;
+    font-weight   : 200;
+}
+
+.user-info-container img {
+    width : 90px;
+    height: 90px;
+}
+
+.name p {
+    font-size: 2rem;
+}
+
+.name img {
+    height: 30px;
+    width : 30px;
+}
+
+/* para having  attribute data-temp */
+.user-info-container p[data-temp] {
+    font-size  : 2.75rem;
+    font-weight: 700;
+}
+
+.parameter-container {
+    display        : flex;
+    gap            : 10px 20px;
+    justify-content: center;
+    align-items    : center;
+    margin-top     : 2rem;
+}
+
+.parameter {
+    min-width       : 45%;
+    height          : 5%;
+    display         : flex;
+    flex-direction  : column;
+    gap             : 5px 0;
+    color           : #112D4E;
+    background-color: #b6ee8971;
+}
+
+.parameter img {
+    width : 50px;
+    height: 50px;
+}
+
+.parameter p:first-of-type {
+    font-size     : 1.15rem;
+    font-weight   : 600;
+    text-transform: uppercase;
+}
+
+.parameter p:last-of-type {
+    font-size  : 1rem;
+    font-weight: 200;
+}
+
+.form-container {
+    display           : none;
+    /* display        : flex; */
+    width             : 90%;
+    max-width         : 550px;
+    margin            : 0 auto;
+    justify-content   : center;
+    /* align-items    : center; */
+    gap               : 0 10px;
+    margin-bottom     : 2rem;
+}
+
+.form-container.active {
+    display   : flex;
+    margin-top: -2rem;
+
+}
+
+.form-container input {
+    width           : calc(100% - 80px);
+    height          : 40px;
+    padding         : 0 20px;
+    background-color: rgba(242, 247, 249, 0.811);
+    border-radius   : 10px;
+}
+
+.form-container input:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.707);
+}
+
+.form-container button {
+    padding        : unset;
+    width          : 40px;
+    height         : 40px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    border-radius  : 50%;
+    outline        : 2px solid rgba(18, 118, 0, 0.753);
+}
