@@ -11,47 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
-
-    <style>
-        .float {
-            animation-name: ani-float;
-            animation-duration: 7s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            transform: rotatex(180deg);
-        }
-
-        @keyframes ani-float {
-            0% {
-                transform: translate(0, 3px);
-            }
-
-            50% {
-                transform: translate(5px, 30px);
-            }
-
-            100% {
-                transform: translate(0, 1px);
-            }
-        }
-    </style>
-
 </head>
 <body>
     <div class="wrapper">
-        <div class="blob">
-            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-25 -25 250 250" class="float">
-                <defs>
-                    <linearGradient id="lgrad" x1="50%" y1="100%" x2="50%" y2="0%">
-                        <stop offset="0%" style="stop-color:#5bf44d;stop-opacity:1.00" />
-                        <stop offset="100%" style="stop-color:#2eaa95;stop-opacity:1.00" />
-                    </linearGradient>
-                </defs>
-                <path
-                    d="M197.01145767676772 75.73527087666739 C187.744581951563 51.64036356405397 148.23746646107378 11.294580111291607 123.83143335835643 2.8811924286226827 C107.18561652733567 -2.8570490014637295 69.85958631381672 3.8155578534567267 53.902957901270334 11.258449924807238 C41.6169838664961 16.989183032582012 20.54064028582939 36.300293317505286 14.361154144808893 48.366792850038664 C5.211529996120191 66.23299288569015 -1.2967782416829046 108.62363961563884 3.9959393530967304 127.98607402451653 C8.879601038493824 145.8520525819059 33.70674905235907 176.86331737848445 49.60149137587789 186.37123553859982 C64.62576360437883 195.35845583172227 101.72488623595065 202.8600661331155 118.61471570790845 198.25218755383386 C142.41178093216615 191.75987883759225 182.91704529398754 156.54847475294676 193.87829051355416 134.45092988952152 C200.41047885790772 121.28223216364364 202.28818132129433 89.45533909591994 197.01145767676772 75.73527087666739Z"
-                    stroke="none" fill="url(#lgrad)" />
-            </svg>
-        </div>
+
         <div class="container">
             <h1>Weather App</h1>
             <div class="tab-container">
