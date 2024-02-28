@@ -263,8 +263,9 @@ h1 {
         width     : 100vw;
         height    : 70rem;
         color     : var(--colorDark1);
-        background: linear-gradient(90deg, rgb(0, 149, 255) 0%, rgb(0, 33, 124) 100%);
-        padding   : 3rem;
+        background: white;
+        padding   : 2rem;
+        margin-left: -1rem;
     }
     .container {
         min-height         : fit-content;
@@ -275,15 +276,13 @@ h1 {
     .tab-container {
         display        : flex;
         flex-direction : column;
-        flex-wrap      : wrap;
         gap            : 0.7rem;
         justify-content: center;
         text-align     : center;
     }
 
-    h1 {
-
-        padding       : 2rem;
+    .grant h1 {
+        padding       : 1rem;
         padding-bottom: 0rem;
         font-size     : 3rem;
     }
@@ -370,10 +369,5 @@ h1 {
     .user-info-container.active {
         display: flex;
     }
-    
-  
-    
-    
-    
     
 }
