@@ -271,6 +271,7 @@ h1 {
     .container {
         min-height         : fit-content;
         width          : 80vw;
+        border-radius:4rem
         /* margin-right: 1rem; */
     }
 
