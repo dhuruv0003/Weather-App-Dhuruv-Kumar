@@ -261,11 +261,11 @@ h1 {
     }
     .grant{
         width     : 100vw;
-        height    : 70rem;
+        height    : 65rem;
         color     : var(--colorDark1);
         background: white;
         padding   : 2rem;
-        margin-left: -1rem;
+        margin-left: -0.5rem;
     }
     .container {
         min-height         : fit-content;
@@ -289,29 +289,31 @@ h1 {
 
     .grant-location-container {
         display: none;
+        
     }
 
     .grant-location-container.active {
+        margin-top: 6rem;
         display   : flex;
         text-align: center;
-        height: 60vh;
+        /* height: 60vh; */
     }
 
     .grant-location-container img {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
 
     .grant-location-container p:first-of-type {
-        font-size  : 1.75rem;
+        font-size  : 2.75rem;
         font-weight: 600;
-
+        margin-bottom: 2rem;
     }
 
     .grant-location-container p:last-of-type {
-        font-size     : 0.85rem;
+        font-size     : 1.05rem;
         font-weight   : 500;
         margin-top    : 0.75rem;
-        margin-bottom : 1.75rem;
+        margin-bottom : 2.75rem;
         letter-spacing: 0.75px;
     }
 
@@ -369,5 +371,10 @@ h1 {
     .user-info-container.active {
         display: flex;
     }
+    
+  
+    
+    
+    
     
 }
