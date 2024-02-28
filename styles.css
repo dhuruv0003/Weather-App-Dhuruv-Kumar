@@ -271,7 +271,7 @@ h1 {
     .container {
         min-height         : fit-content;
         width          : 80vw;
-        border-radius:4rem
+        border-radius: 5rem;
         /* margin-right: 1rem; */
     }
 
@@ -284,7 +284,7 @@ h1 {
     }
 
     .grant h1 {
-        padding       : 1rem;
+        
         padding-bottom: 0rem;
         font-size     : 3rem;
     }
@@ -306,7 +306,7 @@ h1 {
     }
 
     .grant-location-container p:first-of-type {
-        font-size  : 2.75rem;
+        font-size  : 2rem;
         font-weight: 600;
         margin-bottom: 2rem;
     }
