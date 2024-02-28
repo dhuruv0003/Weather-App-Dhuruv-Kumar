@@ -288,10 +288,10 @@ h1 {
         display: none;
     }
 
-    .grant-location-container.active {
+     .grant-location-container.active {
         display   : flex;
         text-align: center;
-        margin-top: -1rem;
+        height: 50vh;
     }
 
     .grant-location-container img {
