@@ -264,7 +264,8 @@ h1 {
         height    : 65rem;
         color     : var(--colorDark1);
         background: white;
-        padding   : 3rem;
+        padding   : 2rem;
+        padding-top: 4rem;
         margin: 0 auto;
     }
     .container {
