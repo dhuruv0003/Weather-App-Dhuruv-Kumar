@@ -26,7 +26,6 @@
 }
 
 
-
 .container {
     height          : 99%;
     width           : 50vw;
@@ -35,7 +34,7 @@
     margin          : 0 auto;
     box-shadow      : 5px 5px 50px 5px rgb(1, 16, 41);
     position        : relative;
-    
+
 }
 
 h1 {
@@ -43,13 +42,14 @@ h1 {
     text-transform: uppercase;
     color         : rgba(43, 0, 255, 0.968);
     padding-top   : 26px;
-    font-size: 3rem;
-       text-shadow   : 2px 2px 5px #0d86ff;
+    font-size     : 3rem;
+    text-shadow   : 2px 2px 5px #0d86ff;
 }
 
 .tab-container {
-    max-width      : 550px;
-    display        : flex;
+    max-width: 550px;
+    display  : flex;
+
     justify-content: space-between;
     margin         : 0 auto;
     margin-top     : 3rem;
@@ -249,4 +249,53 @@ h1 {
     justify-content: center;
     border-radius  : 50%;
     outline        : 2px solid rgba(18, 118, 0, 0.753);
-} 
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        height: 90vh;
+        width    : 80vw;
+        /* margin-right: 1rem; */
+    }
+    .tab-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap      : 0.7rem;
+        justify-content: center;
+        text-align: center;
+    }
+    h1{
+        
+        padding: 2rem;
+        padding-bottom: 0rem;
+        font-size: 2rem;
+    }
+    .grant-location-container {
+        display: none;
+    }
+    
+    .grant-location-container.active {
+        display: flex;
+        text-align: center;
+        margin-top: -1rem;
+    }
+    
+    .grant-location-container img {
+        margin-bottom: 2rem;
+    }
+    
+    .grant-location-container p:first-of-type {
+        font-size  : 1.75rem;
+        font-weight: 600;
+    
+    }
+    
+    .grant-location-container p:last-of-type {
+        font-size     : 0.85rem;
+        font-weight   : 500;
+        margin-top    : 0.75rem;
+        margin-bottom : 1.75rem;
+        letter-spacing: 0.75px;
+    }
+}
