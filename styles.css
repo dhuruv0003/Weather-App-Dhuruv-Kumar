@@ -1,4 +1,4 @@
-*,
+z*,
 *::before,
 *::after {
     margin     : 0;
@@ -265,6 +265,7 @@ h1 {
         color     : var(--colorDark1);
         background: white;
         padding   : 2rem;
+        padding-right: 1rem;
         padding-top: 4rem;
         margin: 0 auto;
     }
