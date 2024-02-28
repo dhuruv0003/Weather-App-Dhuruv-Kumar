@@ -264,8 +264,8 @@ h1 {
         height    : 65rem;
         color     : var(--colorDark1);
         background: white;
-        padding   : 2rem;
-        margin-left: -0.5rem;
+        padding   : 3rem;
+        margin: 0 auto;
     }
     .container {
         min-height         : fit-content;
