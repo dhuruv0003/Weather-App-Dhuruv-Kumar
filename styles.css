@@ -1,4 +1,4 @@
-z*,
+*,
 *::before,
 *::after {
     margin     : 0;
@@ -251,13 +251,14 @@ h1 {
     outline        : 2px solid rgba(18, 118, 0, 0.753);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .wrapper {
         width     : 100vw;
         height    : fit-content;
         color     : var(--colorDark1);
         background: linear-gradient(90deg, rgb(0, 149, 255) 0%, rgb(0, 33, 124) 100%);
-        padding   : 3rem;
+        padding   : 2rem;
+
     }
     .grant{
         width     : 100vw;
